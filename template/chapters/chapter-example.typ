@@ -1,4 +1,4 @@
-#import "@local/uestc-thesis:1.0.0": thesis-figure, thesis-table
+#import "@preview/uestc-thesis:1.0.0": thesis-figure, thesis-table
 
 #pagebreak()
 

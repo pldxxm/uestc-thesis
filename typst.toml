@@ -5,15 +5,12 @@ entrypoint = "lib.typ"
 authors = ["Devin Yang"]
 license = "MIT"
 keywords= ["UESTC","THESIS"]
-categories = ["Thesis"]
+categories = ["thesis"]
 compiler="0.13.0"
-
-[output]
-pdf = "true"
-
+description = "电子科技大学硕士学位论文模板.Modern UESTC Thesis Template."
 
 
 [template]
 path = "template"
-entrypoint = "main-example.typ"
-thumbnail = "images/template-cover.png"
+entrypoint = "main.typ"
+thumbnail = "thumbnail.png"

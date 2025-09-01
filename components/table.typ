@@ -2,8 +2,9 @@
 
 
 // 使用无上边框header实现续表，可以实现跨多页续表，且续表的标题行会自动拼接
-#let thesis-table(title: "", header: none, body: none, columns: none, alignment: left + horizon, note: none) = {
+#let thesis-table(title: "", header: none, body: none, columns: none, alignment: left + horizon, outlined:true,supplement:[表],note: none) = {
   // Use a 五号字 size for text
+  set par(first-line-indent: 2em) 
   set text(size: zh(5))
   let xubiao = state("xubiao")
 
@@ -99,7 +100,8 @@
       position: top,
       [#title],
     ),
-    supplement: [表],
+    outlined:outlined,
+    supplement: supplement,
   )
 
 
@@ -107,7 +109,8 @@
   if note != none {
     v(0.5em)
     align(left)[
-      #text(size: zh(6))[注：#note]
+      #text(size: zh(6))[#note]
     ]
   }
 }
+

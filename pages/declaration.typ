@@ -1,7 +1,7 @@
 #let declaration() = [
   // #pagebreak()
-
   #import "@preview/pointless-size:0.1.1": zh
+  #set page(numbering:none,header:none)
   // 独创性声明
   #align(center)[
     #text(font: "SimHei", size: 18pt, weight: "bold")[独创性声明]
